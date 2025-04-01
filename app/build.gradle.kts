@@ -37,6 +37,12 @@ android {
     buildFeatures {
         compose = true
     }
+
+    testOptions {
+        unitTests.all {
+            it.useJUnitPlatform()
+        }
+    }
 }
 
 dependencies {
@@ -58,7 +64,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     // kotest
-    testImplementation(libs.kotest.runner.junit5)
-    testImplementation(libs.kotest.assertions.core)
+    testImplementation(libs.kotest.runner)
+    testImplementation(libs.kotest.assertions)
     testImplementation(libs.kotest.property)
 }
