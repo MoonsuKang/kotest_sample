@@ -1,4 +1,4 @@
-package com.river.kotest
+package com.river.kotest.writingtest
 
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.string.shouldHaveLength

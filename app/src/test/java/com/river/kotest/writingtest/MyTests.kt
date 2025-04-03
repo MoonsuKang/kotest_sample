@@ -1,4 +1,4 @@
-package com.river.kotest
+package com.river.kotest.writingtest
 
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.should
